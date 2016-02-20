@@ -1,0 +1,15 @@
+url: https://nohponex.gr
+enforce_ssl: nohponex.gr
+
+baseurl: /
+title: Spafaridis Xenofon
+author: Spafaridis Xenofon
+description:
+avatar: profile.png
+email: nohponex@gmail.com
+github: nohponex
+twitter: nohponex
+linkedin: nohponex
+
+# needed for travis-ci build
+exclude: [vendor]
