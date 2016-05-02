@@ -14,9 +14,9 @@
       padding-right: 10px;
       background-color: #2F3238;
       line-height: 1.7em;
-      color: #7f8c8d;
-      font-size: 14px;
-      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      color: #F1F3F3;
+      font-size: 14pt;
+      font-family: "Andale Mono";
       display: flex;
       min-height: 95vh;
       flex-direction: column;
@@ -24,17 +24,21 @@
 
     h1 {
       color: #FFF;
-      font-size: 2em;
+      font-size: 1.75em;
       text-shadow: 2px 2px 2px rgba(230, 230, 230, 0.5);
       text-align: center;
     }
 
-    h2 {
-      color: #2F3238;
-    }
+    h2 {}
 
     .hidden {
       display: none;
+    }
+
+    #avatar {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .center {
@@ -45,13 +49,18 @@
       display: -webkit-flex;
       display: flex;
       flex-direction: column;
+      align-items: center;
       width: 100%;
     }
 
     .row {}
 
     .flex-item {
-      text-align: center;
+      align-items: center;
+    }
+
+    #projects ul {
+      text-align: left;
     }
 
     a {
@@ -69,37 +78,43 @@
 <body>
   <div class="center">
     <div class="row">
-      <div class="l-box" itemscope itemtype="http://data-vocabulary.org/Person">
+      <div class="flex-item" itemscope itemtype="http://data-vocabulary.org/Person">
         <p class="lead">
           <h1>
             <span itemprop="name">Spafaridis Xenofon</span>
             <small>(<span itemprop="nickname">nohponex</span>)<small>
           </h1>
         </p>
-        <div class="flex-item">
-          <p itemprop="title">Undergraduate Electrical and Computer Engineer &amp; Web Developer</p>
-
-          <img itemprop="photo" class="block-center" src="//www.gravatar.com/avatar/cfdf830a6d5e196ed348c03427255dd6.png?s=128" alt="avatar" />
-          <span class="hidden" itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
-            <span itemprop="country-name">Greece</span>
-          </span>
-          <p>
-            <a href="https://github.com/nohponex">https://github.com/nohponex</a>
-          </p>
-          <p>
-            Projects:
-            <ul>
-              <li><a href="https://phramework.github.io/">phramework</a></li>
-            </ul>
-          </p>
-            Links:
-            <ul>
-              <li><a href="https://twitter.com/nohponex">@nohponex</a></li>
-            </ul>
+      </div>
+      <div class="flex-item">
+        <h2 itemprop="title">
+          Undergraduate Electrical and Computer Engineer &amp; Web Developer
+        </h2>
+        <img id="avatar" itemprop="photo" class="block-center" src="https://www.gravatar.com/avatar/cfdf830a6d5e196ed348c03427255dd6.png?s=128" alt="avatar" />
+        <span class="hidden" itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+          <span itemprop="country-name">Greece</span>
+        </span>
+        <div class="flex-item" id="projects">
+          <h2>Projects:</h2>
+          <ul>
+            <li><a href="https://phramework.github.io/">phramework</a></li>
+          </ul>
+          <h2>Links:</h2>
+          <ul>
+            <li>
+              <a href="https://github.com/nohponex" target="_blank">
+                https://github.com/nohponex
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/nohponex" target="_blank">
+                Twitter @nohponex
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 </body>
-
 </html>
