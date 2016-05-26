@@ -29,7 +29,10 @@
       text-align: center;
     }
 
-    h2 {}
+    h2, header > h1 {
+      font-size: 1.1em;
+      text-align:left;
+    }
 
     .hidden {
       display: none;
@@ -79,30 +82,34 @@
   <div class="center">
     <div class="row">
       <div class="flex-item" itemscope itemtype="http://data-vocabulary.org/Person">
-        <p class="lead">
-          <h1>
-            <span itemprop="name">Spafaridis Xenofon</span>
-            <small>(<span itemprop="nickname">nohponex</span>)<small>
-          </h1>
-        </p>
-      </div>
-      <div class="flex-item">
+        <h1 class="lead">
+          <span itemprop="name">Spafaridis Xenofon</span>
+          <small>(<span itemprop="nickname">nohponex</span>)</small>
+        </h1>
         <h2 itemprop="title">
           Undergraduate Electrical and Computer Engineer &amp; Web Developer
         </h2>
+      </div>
+      <div class="flex-item">
         <img id="avatar" itemprop="photo" class="block-center" src="https://www.gravatar.com/avatar/cfdf830a6d5e196ed348c03427255dd6.png?s=128" alt="avatar" />
         <span class="hidden" itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
           <span itemprop="country-name">Greece</span>
         </span>
-        <div class="flex-item" id="projects">
-          <h2>Projects:</h2>
+        <section class="flex-item" id="projects">
+          <header>
+            <h1>Projects:</h1>
+          </header>
           <ul>
             <li><a href="https://phramework.github.io/">phramework</a></li>
           </ul>
-          <h2>Links:</h2>
+        </section>
+        <section class="flex-item" id="links">
+          <header>
+            <h1>Links:</h1>
+          </header>
           <ul>
             <li>
-              <a href="https://github.com/nohponex" target="_blank">
+              <a href="github.com/nohponex" target="_blank">
                 https://github.com/nohponex
               </a>
             </li>
@@ -112,7 +119,7 @@
               </a>
             </li>
           </ul>
-        </div>
+        </section>
       </div>
     </div>
   </div>
