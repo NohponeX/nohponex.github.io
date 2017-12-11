@@ -1,0 +1,13 @@
+{
+  "basics": {
+    "name": "Spafaridis Xenofon",
+    "label": "Software Engineer",
+    "website": "https://nohponex.gr",
+    "education": [
+      {
+        "institution": "Aristotle University of Thessaloniki",
+        "area": "Electrical and Computer Engineering"
+      }
+    ]
+  }
+}
